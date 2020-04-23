@@ -25,7 +25,7 @@ class OMDB {
     async movieInfo(id) {
         //console.log(id);
 
-        const response = await fetch(`http://www.omdbapi.com/?apikey=${this.key}&i=${id}`);
+        const response = await fetch(`https://www.omdbapi.com/?apikey=${this.key}&i=${id}`);
         const results = await response.json();
         return results;
     }
