@@ -31,7 +31,7 @@ class OMDB {
     }
 
     async search(userText) {
-        const response = await fetch(`http://www.omdbapi.com/?apikey=${this.key}&s=${userText}`);
+        const response = await fetch(`https://www.omdbapi.com/?apikey=${this.key}&s=${userText}`);
         const results = await response.json();
         return results.Search;
 
