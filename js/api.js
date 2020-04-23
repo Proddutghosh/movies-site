@@ -7,9 +7,9 @@ class OMDB {
     }
 
     async getMovies() {
-        const movieResponse = await fetch(`http://www.omdbapi.com/?apikey=${this.key}&s=game
+        const movieResponse = await fetch(`https://www.omdbapi.com/?apikey=${this.key}&s=game
         `);
-        const seriesResponse = await fetch(`http://www.omdbapi.com/?apikey=${this.key}&s=series
+        const seriesResponse = await fetch(`https://www.omdbapi.com/?apikey=${this.key}&s=series
     `);
 
         const movieResults = await movieResponse.json();
